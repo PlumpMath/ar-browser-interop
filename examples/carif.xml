@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carif:carif xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.opengis.net/arml/2.0"
+ xmlns:carif="http://arstandards.org/carif/1.0"
+ xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/arml/2.0 arml20.xsd">
+ <arml>
+  <ARElements>
+   <Feature id="simplePoi">
+    <name>
+     This is the only POI in this experience
+    </name>
+    <description>
+        <![CDATA[This POI is of no particular interest, except for people interested in open, interoperable AR experiences. It was born and raised only for this particular reason.]]>
+    </description>
+    <metadata>
+     <actions>
+      <action mime-type="text/html" label="Open webpage">
+       <uri>
+        http://www.homeofpoi.com/lessons_all/teach/Simple-Sock-Poi-3_50_189
+       </uri>
+      </action>
+      <action mime-type="audio/mp3" label="Play sound">
+       <uri>
+        http://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+       </uri>
+      </action>
+      <action mime-type="video/mp4" label="Play video">
+       <uri>
+        http://clips.vorwaerts-gmbh.de/VfE_html5.mp4
+       </uri>
+      </action>
+      <action mime-type="application/send-email">
+       <uri>
+       <![CDATA[
+         mailto:noone@example.com?subject=This%20is%20a%20test%20mail&body=Only%20a%20test!
+       ]]>
+       </uri>
+      </action>
+      <action mime-type="application/route-to">
+       <uri>
+        route:daddr=12.3456,45.678
+       </uri>
+      </action>
+     </actions>
+     <image href="http://mybucket.s3.amazonaws.com/anIcon.png" />
+    </metadata>
+    <anchors>
+     <Geometry>
+      <assets />
+      <gml:Point gml:id="poi1">
+       <gml:pos>12.3456 45.678 420</gml:pos>
+      </gml:Point>
+     </Geometry>
+    </anchors>
+   </Feature>
+  </ARElements>
+ </arml>
+ <carif:ARExperience>
+  <carif:name>Simple AR Experience</carif:name>
+  <carif:description><![CDATA[This is a simple AR Experience with a single POI, doing nothing special.]]></carif:description>
+  <carif:metaData>
+   <carif:icon
+    href="http://courtneyhouse.com/wp-content/uploads/2013/11/door-open-iconopen-door-icon-large-home-icons-ktv3pukj.gif" />
+   <carif:author>Courtneyhouse</carif:author>
+   <carif:webpage href="http://courtneyhouse.com" />
+  </carif:metaData>
+ </carif:ARExperience>
+</carif:carif>
